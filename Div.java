@@ -7,7 +7,7 @@ public class Div extends HtmlElement{
 
     public String makeDiv(Div div){
         StringBuilder sb = new StringBuilder();
-        sb.append("<div ");
+        sb.append("<div");
         if( name != null){
             sb.append(div.appendName(name));
         }

@@ -18,25 +18,25 @@ public class Head {
         sb.append("<head>");
         if (head.title != null){
             sb.append("\n<title>");
-            sb.append(head);
+            sb.append(head.title);
             sb.append("</title>");
         }
         if(head.charSet != null){
             sb.append("\n<meta charset=");
             sb.append('"');
-            sb.append(head);
+            sb.append(head.charSet);
             sb.append("\">");
         }
         if(head.script != null){
             sb.append("\n<script src=");
             sb.append('"');
-            sb.append(head);
+            sb.append(head.script);
             sb.append("\">");
         }
         if(head.style != null){
             sb.append("\n<style id=");
             sb.append('"');
-            sb.append(head);
+            sb.append(head.style);
             sb.append("\">");
         }
         sb.append("\n</head>\n");
