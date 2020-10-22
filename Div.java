@@ -8,14 +8,14 @@ public class Div extends HtmlElement{
     public String makeDiv(Div div){
         StringBuilder sb = new StringBuilder();
         sb.append("<div");
-        if( name != null){
-            sb.append(div.appendName(name));
+        if( getName() != null){
+            sb.append(div.appendName(getName()));
         }
-        if(cssClass != null){
-            sb.append(div.appendCssClass(cssClass));
+        if(getCssClass() != null){
+            sb.append(div.appendCssClass(getCssClass()));
         }
-        if( id != null){
-            sb.append(div.appendId(id));
+        if( getId() != null){
+            sb.append(div.appendId(getId()));
         }
         sb.append('>');
         sb.append("\n</div>");

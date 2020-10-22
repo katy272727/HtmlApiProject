@@ -17,14 +17,14 @@ public class Table extends HtmlElement {
     public String makeTable(Table table){
         StringBuilder sb = new StringBuilder();
         sb.append("<table ");
-        if(id != null){
-            sb.append(table.appendId(id));
+        if(getId() != null){
+            sb.append(table.appendId(getId()));
         }
-        if(name != null){
-            sb.append(table.appendName(name));
+        if(getName() != null){
+            sb.append(table.appendName(getName()));
         }
-        if(cssClass != null){
-            sb.append(table.appendCssClass(cssClass));
+        if(getCssClass() != null){
+            sb.append(table.appendCssClass(getCssClass()));
         }
         if (style != null){
             sb.append("style=\"");

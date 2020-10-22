@@ -17,14 +17,14 @@ public class RadioButton extends HtmlElement {
         sb.append("<input type=\"");
         sb.append(type);
         sb.append("\" ");
-        if( name != null){
-            sb.append(radioButton.appendName(name));
+        if( getName() != null){
+            sb.append(radioButton.appendName(getName()));
         }
-        if(cssClass != null){
-            sb.append(radioButton.appendCssClass(cssClass));
+        if(getCssClass() != null){
+            sb.append(radioButton.appendCssClass(getCssClass()));
         }
-        if( id != null){
-            sb.append(radioButton.appendId(id));
+        if( getId() != null){
+            sb.append(radioButton.appendId(getId()));
         }
         if(value != null){
             sb.append("value=\"");
@@ -32,9 +32,9 @@ public class RadioButton extends HtmlElement {
             sb.append("\"");
         }
         sb.append('>');
-        if(label != null && id != null);
+        if(label != null && getId() != null);
         sb.append("\n<label for=\"");
-        sb.append(id);
+        sb.append(getId());
         sb.append("\">");
         sb.append(label);
         sb.append("</label>");

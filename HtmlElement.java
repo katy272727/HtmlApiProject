@@ -1,9 +1,21 @@
 package HtmlApi;
 
 public class HtmlElement {
-    protected String name;
-    protected String cssClass;
-    protected String id;
+    private String name;
+    private String cssClass;
+    private String id;
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCssClass() {
+        return cssClass;
+    }
+
+    public String getId() {
+        return id;
+    }
 
     public HtmlElement(String name, String cssClass, String id) {
         this.name = name;

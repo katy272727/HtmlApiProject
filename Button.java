@@ -22,7 +22,6 @@ public class Button extends HtmlElement {
         else{
             this.type = type;
         }
-
     }
 
     public String makeButton(Button button){
@@ -44,14 +43,14 @@ public class Button extends HtmlElement {
             sb.append(form);
             sb.append('"');
         }
-        if( name != null){
-            sb.append(button.appendName(name));
+        if( getName() != null){
+            sb.append(button.appendName(getName()));
         }
-        if(cssClass != null){
-            sb.append(button.appendCssClass(cssClass));
+        if(getCssClass() != null){
+            sb.append(button.appendCssClass(getCssClass()));
         }
-        if( id != null){
-            sb.append(button.appendId(id));
+        if( getId() != null){
+            sb.append(button.appendId(getId()));
         }
         sb.append(" type=\"");
         sb.append(type);
